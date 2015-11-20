@@ -1,0 +1,322 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D01008A11BFCB73800510054 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D01008A01BFCB73800510054 /* main.cpp */; };
+		D0D31FD01BFD00EF006621F3 /* main2.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D0D31FCF1BFD00EF006621F3 /* main2.cpp */; };
+		D0D31FD21BFDFE16006621F3 /* main3.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D0D31FD11BFDFE16006621F3 /* main3.cpp */; };
+		D0E909211BFE30D800978544 /* ProjectiveGeometry.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D0E9091F1BFE30D800978544 /* ProjectiveGeometry.cpp */; };
+		D0E909241BFE324600978544 /* Camera.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D0E909221BFE324600978544 /* Camera.cpp */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		D010089B1BFCB73800510054 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		D010089D1BFCB73800510054 /* CV_assignment_2 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = CV_assignment_2; sourceTree = BUILT_PRODUCTS_DIR; };
+		D01008A01BFCB73800510054 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		D0D31FCA1BFCD974006621F3 /* left.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = left.jpg; sourceTree = "<group>"; };
+		D0D31FCB1BFCD974006621F3 /* left.pgm */ = {isa = PBXFileReference; lastKnownFileType = text; path = left.pgm; sourceTree = "<group>"; };
+		D0D31FCC1BFCD974006621F3 /* parameters.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = parameters.txt; sourceTree = "<group>"; };
+		D0D31FCD1BFCD974006621F3 /* right.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = right.jpg; sourceTree = "<group>"; };
+		D0D31FCE1BFCD974006621F3 /* right.pgm */ = {isa = PBXFileReference; lastKnownFileType = file; path = right.pgm; sourceTree = "<group>"; };
+		D0D31FCF1BFD00EF006621F3 /* main2.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = main2.cpp; sourceTree = "<group>"; };
+		D0D31FD11BFDFE16006621F3 /* main3.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = main3.cpp; sourceTree = "<group>"; };
+		D0E9091F1BFE30D800978544 /* ProjectiveGeometry.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ProjectiveGeometry.cpp; sourceTree = "<group>"; };
+		D0E909201BFE30D800978544 /* ProjectiveGeometry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProjectiveGeometry.h; sourceTree = "<group>"; };
+		D0E909221BFE324600978544 /* Camera.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Camera.cpp; sourceTree = "<group>"; };
+		D0E909231BFE324600978544 /* Camera.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Camera.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D010089A1BFCB73800510054 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D01008941BFCB73800510054 = {
+			isa = PBXGroup;
+			children = (
+				D0D31FCA1BFCD974006621F3 /* left.jpg */,
+				D0D31FCB1BFCD974006621F3 /* left.pgm */,
+				D0D31FCC1BFCD974006621F3 /* parameters.txt */,
+				D0D31FCD1BFCD974006621F3 /* right.jpg */,
+				D0D31FCE1BFCD974006621F3 /* right.pgm */,
+				D010089F1BFCB73800510054 /* CV_assignment_2 */,
+				D010089E1BFCB73800510054 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		D010089E1BFCB73800510054 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D010089D1BFCB73800510054 /* CV_assignment_2 */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D010089F1BFCB73800510054 /* CV_assignment_2 */ = {
+			isa = PBXGroup;
+			children = (
+				D01008A01BFCB73800510054 /* main.cpp */,
+				D0D31FCF1BFD00EF006621F3 /* main2.cpp */,
+				D0D31FD11BFDFE16006621F3 /* main3.cpp */,
+				D0E9091F1BFE30D800978544 /* ProjectiveGeometry.cpp */,
+				D0E909201BFE30D800978544 /* ProjectiveGeometry.h */,
+				D0E909221BFE324600978544 /* Camera.cpp */,
+				D0E909231BFE324600978544 /* Camera.h */,
+			);
+			path = CV_assignment_2;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D010089C1BFCB73800510054 /* CV_assignment_2 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D01008A41BFCB73800510054 /* Build configuration list for PBXNativeTarget "CV_assignment_2" */;
+			buildPhases = (
+				D01008991BFCB73800510054 /* Sources */,
+				D010089A1BFCB73800510054 /* Frameworks */,
+				D010089B1BFCB73800510054 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CV_assignment_2;
+			productName = CV_assignment_2;
+			productReference = D010089D1BFCB73800510054 /* CV_assignment_2 */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D01008951BFCB73800510054 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0620;
+				ORGANIZATIONNAME = "Unlimited Blade Works";
+				TargetAttributes = {
+					D010089C1BFCB73800510054 = {
+						CreatedOnToolsVersion = 6.2;
+					};
+				};
+			};
+			buildConfigurationList = D01008981BFCB73800510054 /* Build configuration list for PBXProject "CV_assignment_2" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = D01008941BFCB73800510054;
+			productRefGroup = D010089E1BFCB73800510054 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D010089C1BFCB73800510054 /* CV_assignment_2 */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D01008991BFCB73800510054 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D0D31FD21BFDFE16006621F3 /* main3.cpp in Sources */,
+				D01008A11BFCB73800510054 /* main.cpp in Sources */,
+				D0E909241BFE324600978544 /* Camera.cpp in Sources */,
+				D0E909211BFE30D800978544 /* ProjectiveGeometry.cpp in Sources */,
+				D0D31FD01BFD00EF006621F3 /* main2.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		D01008A21BFCB73800510054 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		D01008A31BFCB73800510054 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		D01008A51BFCB73800510054 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					/usr/local/include,
+				);
+				LIBRARY_SEARCH_PATHS = /usr/local/lib;
+				OTHER_LDFLAGS = (
+					"-lopencv_calib3d",
+					"-lopencv_core",
+					"-lopencv_features2d",
+					"-lopencv_flann",
+					"-lopencv_highgui",
+					"-lopencv_imgcodecs",
+					"-lopencv_imgproc",
+					"-lopencv_ml",
+					"-lopencv_objdetect",
+					"-lopencv_photo",
+					"-lopencv_shape",
+					"-lopencv_stitching",
+					"-lopencv_superres",
+					"-lopencv_ts",
+					"-lopencv_video",
+					"-lopencv_videoio",
+					"-lopencv_videostab",
+					"-lopencv_xfeatures2d",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		D01008A61BFCB73800510054 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					/usr/local/include,
+				);
+				LIBRARY_SEARCH_PATHS = /usr/local/lib;
+				OTHER_LDFLAGS = (
+					"-lopencv_calib3d",
+					"-lopencv_core",
+					"-lopencv_features2d",
+					"-lopencv_flann",
+					"-lopencv_highgui",
+					"-lopencv_imgcodecs",
+					"-lopencv_imgproc",
+					"-lopencv_ml",
+					"-lopencv_objdetect",
+					"-lopencv_photo",
+					"-lopencv_shape",
+					"-lopencv_stitching",
+					"-lopencv_superres",
+					"-lopencv_ts",
+					"-lopencv_video",
+					"-lopencv_videoio",
+					"-lopencv_videostab",
+					"-lopencv_xfeatures2d",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D01008981BFCB73800510054 /* Build configuration list for PBXProject "CV_assignment_2" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D01008A21BFCB73800510054 /* Debug */,
+				D01008A31BFCB73800510054 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D01008A41BFCB73800510054 /* Build configuration list for PBXNativeTarget "CV_assignment_2" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D01008A51BFCB73800510054 /* Debug */,
+				D01008A61BFCB73800510054 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D01008951BFCB73800510054 /* Project object */;
+}
