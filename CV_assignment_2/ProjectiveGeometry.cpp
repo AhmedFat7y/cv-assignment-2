@@ -78,7 +78,8 @@ vector<Mat> ProjectiveGeometry::reconstruct3DPoints(vector<Mat> left_mats, vecto
     Mat c1  = camera1->computeCameraCenterMatrix(false);
     Mat c2  = camera2->computeCameraCenterMatrix(false);
     Mat I = Mat::eye(3, 3, CV_64F);
-    printMat("pInfinity: ", pInfinity1);
+    printMat("pInfinity1: ", pInfinity1);
+    printMat("pInfinity2: ", pInfinity2);
 //    Mat temp;
 //    normalize(Mat(3,1, CV_64F, new double[3] {5, 5, 5}), temp);
 //    printMat("norm exp", temp);
@@ -95,6 +96,8 @@ vector<Mat> ProjectiveGeometry::reconstruct3DPoints(vector<Mat> left_mats, vecto
         printMat("point right", right_mats[i]);
         printMat("mInfinity1 norm: ", mInfinity1);
         printMat("mInfinity2 norm: ", mInfinity2);
+        printMat("C1: ", c1);
+        printMat("C2: ", c2);
         Mat m = (
                     (I - (mInfinity1 * mInfinity1.t()))
                     +

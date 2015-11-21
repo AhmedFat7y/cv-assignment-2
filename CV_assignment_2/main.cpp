@@ -79,6 +79,13 @@ void q2() {
     
     Mat result = pg.computeProjectedImage(img);
     imshow("projected image", result);
+//    printMat("C: ", camera.computeCameraCenterMatrix(false));
+//    printMat("A: ", camera.computeCalibrationMatrix());
+//    printMat("R: ", camera.computeRotationMatrix());
+//    printMat("AR: ", camera.computeAR());
+//    printMat("P: ", camera.computePMatrix());
+
+
 }
 
 void q3() {
