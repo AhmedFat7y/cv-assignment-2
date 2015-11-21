@@ -32,7 +32,7 @@ Camera::Camera(double focalLength, double u0, double v0, double FH, double FW, d
 //    this->p = this->computePMatrix();
 }
 
-Camera::Camera(double u0, double v0, double alphaU, double alphaV, double tilt, double pan, double swing, double sizeX, double sizeY, double * cameraCenter) {
+Camera::Camera(double u0, double v0, double alphaU, double alphaV, double tilt, double pan, double swing, int sizeX, int sizeY, double * cameraCenter) {
     this->focalLength = 0;
     this->u0 = u0;
     this->v0 = v0;

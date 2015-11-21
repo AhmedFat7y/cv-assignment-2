@@ -60,13 +60,19 @@ void q1() {
     ////    F=[e']x[A'R'][AR]^-1        //sent by Nadine Adel Zayed (not zayed bta3 el emirate)
 }
 void q2() {
-    Mat img = imread("/Users/MacBookAir/Documents/guc-projects/cv/CV_assignment_2/input.jpg", CV_LOAD_IMAGE_COLOR);   // Read the file
-    double sizeX = 200, sizeY = 200;
-    double u0 = sizeY / 2, v0 = sizeX / 2;
-    double alphaU = 300;
-    double alphaV = 300;
-    double pan = degToRad(0), tilt = degToRad(50), swing = degToRad(0);
+//    X, Y, Z = 350, 0, 300
+//    Tilt = 50
+//    Pan = 0
+//    Swing = 0
+//    alpha_u = alpha_v = 100
+//    SizeX = sizeY = 200
     
+    Mat img = imread("/Users/MacBookAir/Documents/guc-projects/cv/CV_assignment_2/input.jpg", CV_LOAD_IMAGE_COLOR);   // Read the file
+    int sizeX = 200, sizeY = 200;
+    double u0 = sizeY / 2, v0 = sizeX / 2;
+    double alphaU = 100;
+    double alphaV = 100;
+    double pan = degToRad(0), tilt = degToRad(50), swing = degToRad(0);
     Camera camera(u0, v0, alphaU, alphaV, tilt, pan, swing, sizeX, sizeY, new double[4] {350, 0, 300, 1});
 
     

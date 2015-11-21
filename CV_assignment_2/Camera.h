@@ -39,7 +39,7 @@ public:
     Mat d, p;
     bool isTiltPanSwing;
     Camera(double focalLength, double u0, double v0, double FH, double FW, double IH, double IW, double kappa, double phi, double omega, double * cameraCenter);
-    Camera(double u0, double v0, double alphaU, double alphaV, double tilt, double pan, double swing, double sizeX, double sizeY, double * cameraCenter);
+    Camera(double u0, double v0, double alphaU, double alphaV, double tilt, double pan, double swing, int sizeX, int sizeY, double * cameraCenter);
     double computeAlphaU();
     double computeAlphaV();
     Mat computeRotationMatrix();
