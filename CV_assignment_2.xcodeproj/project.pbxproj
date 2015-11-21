@@ -7,9 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D00917861C007AA30044F012 /* utilities.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D00917851C007AA30044F012 /* utilities.cpp */; };
 		D01008A11BFCB73800510054 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D01008A01BFCB73800510054 /* main.cpp */; };
-		D0D31FD01BFD00EF006621F3 /* main2.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D0D31FCF1BFD00EF006621F3 /* main2.cpp */; };
-		D0D31FD21BFDFE16006621F3 /* main3.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D0D31FD11BFDFE16006621F3 /* main3.cpp */; };
 		D0E909211BFE30D800978544 /* ProjectiveGeometry.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D0E9091F1BFE30D800978544 /* ProjectiveGeometry.cpp */; };
 		D0E909241BFE324600978544 /* Camera.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D0E909221BFE324600978544 /* Camera.cpp */; };
 /* End PBXBuildFile section */
@@ -27,6 +26,9 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		D00917841C005DB50044F012 /* utilities.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = utilities.h; sourceTree = "<group>"; };
+		D00917851C007AA30044F012 /* utilities.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = utilities.cpp; sourceTree = "<group>"; };
+		D00917871C009E440044F012 /* Question 3_19491.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = "Question 3_19491.txt"; sourceTree = "<group>"; };
 		D010089D1BFCB73800510054 /* CV_assignment_2 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = CV_assignment_2; sourceTree = BUILT_PRODUCTS_DIR; };
 		D01008A01BFCB73800510054 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		D0D31FCA1BFCD974006621F3 /* left.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = left.jpg; sourceTree = "<group>"; };
@@ -34,8 +36,9 @@
 		D0D31FCC1BFCD974006621F3 /* parameters.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = parameters.txt; sourceTree = "<group>"; };
 		D0D31FCD1BFCD974006621F3 /* right.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = right.jpg; sourceTree = "<group>"; };
 		D0D31FCE1BFCD974006621F3 /* right.pgm */ = {isa = PBXFileReference; lastKnownFileType = file; path = right.pgm; sourceTree = "<group>"; };
-		D0D31FCF1BFD00EF006621F3 /* main2.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = main2.cpp; sourceTree = "<group>"; };
-		D0D31FD11BFDFE16006621F3 /* main3.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = main3.cpp; sourceTree = "<group>"; };
+		D0E79BA51BFFCADE000A9222 /* input.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = input.jpg; path = ../cv_assignment_2/input.jpg; sourceTree = "<group>"; };
+		D0E79BA61BFFCADE000A9222 /* output.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = output.jpg; path = ../cv_assignment_2/output.jpg; sourceTree = "<group>"; };
+		D0E79BA71BFFCADE000A9222 /* Question 2.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = "Question 2.txt"; path = "../cv_assignment_2/Question 2.txt"; sourceTree = "<group>"; };
 		D0E9091F1BFE30D800978544 /* ProjectiveGeometry.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ProjectiveGeometry.cpp; sourceTree = "<group>"; };
 		D0E909201BFE30D800978544 /* ProjectiveGeometry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProjectiveGeometry.h; sourceTree = "<group>"; };
 		D0E909221BFE324600978544 /* Camera.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Camera.cpp; sourceTree = "<group>"; };
@@ -56,6 +59,10 @@
 		D01008941BFCB73800510054 = {
 			isa = PBXGroup;
 			children = (
+				D00917871C009E440044F012 /* Question 3_19491.txt */,
+				D0E79BA51BFFCADE000A9222 /* input.jpg */,
+				D0E79BA61BFFCADE000A9222 /* output.jpg */,
+				D0E79BA71BFFCADE000A9222 /* Question 2.txt */,
 				D0D31FCA1BFCD974006621F3 /* left.jpg */,
 				D0D31FCB1BFCD974006621F3 /* left.pgm */,
 				D0D31FCC1BFCD974006621F3 /* parameters.txt */,
@@ -78,12 +85,12 @@
 			isa = PBXGroup;
 			children = (
 				D01008A01BFCB73800510054 /* main.cpp */,
-				D0D31FCF1BFD00EF006621F3 /* main2.cpp */,
-				D0D31FD11BFDFE16006621F3 /* main3.cpp */,
 				D0E9091F1BFE30D800978544 /* ProjectiveGeometry.cpp */,
 				D0E909201BFE30D800978544 /* ProjectiveGeometry.h */,
 				D0E909221BFE324600978544 /* Camera.cpp */,
 				D0E909231BFE324600978544 /* Camera.h */,
+				D00917841C005DB50044F012 /* utilities.h */,
+				D00917851C007AA30044F012 /* utilities.cpp */,
 			);
 			path = CV_assignment_2;
 			sourceTree = "<group>";
@@ -144,11 +151,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D0D31FD21BFDFE16006621F3 /* main3.cpp in Sources */,
 				D01008A11BFCB73800510054 /* main.cpp in Sources */,
 				D0E909241BFE324600978544 /* Camera.cpp in Sources */,
+				D00917861C007AA30044F012 /* utilities.cpp in Sources */,
 				D0E909211BFE30D800978544 /* ProjectiveGeometry.cpp in Sources */,
-				D0D31FD01BFD00EF006621F3 /* main2.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

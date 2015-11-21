@@ -1,0 +1,7 @@
+You can use the following values to test your implementation for question 3:
+
+Left: [543, 207], Right: [393, 431], 3D: [9.85, -0.90, 0.72]
+Left: [422, 233], Right: [330, 334], 3D: [299.07, 324.69, 15.28]
+Left: [392, 122], Right: [367, 215], 3D: [294.90, 312.07, 496.07]
+Left: [260, 209], Right: [204, 148], 3D: [301.40, 875.92, 514.52]
+Left: [339, 268], Right: [233, 262], 3D: [289.37, 706.35, 144.88]

@@ -1,0 +1,6 @@
+X, Y, Z = 350, 0, 300
+Tilt = 50
+Pan = 0
+Swing = 0
+alpha_u = alpha_v = 100
+SizeX = sizeY = 200

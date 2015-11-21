@@ -15,6 +15,7 @@
 #include <iostream>
 #include <stdio.h>
 #include "Camera.h"
+#include "utilities.h"
 
 using namespace cv;
 using namespace std;
@@ -26,7 +27,8 @@ public:
     Camera * camera2;
     ProjectiveGeometry(Camera * c1, Camera * c2);
     Mat computeFundmentalMatrix();
-    Mat getSkewMatrix(Mat mat);
+    Mat computeProjectedImage(Mat img);
+    static Mat getSkewMatrix(Mat mat);
 };
 
 #endif /* defined(__CV_assignment_2__ProjectiveGeometry__) */
