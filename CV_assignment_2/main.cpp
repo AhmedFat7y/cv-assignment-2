@@ -8,7 +8,7 @@
 using namespace cv;
 using namespace std;
 
-
+string path = "/Users/MacBookAir/Documents/guc-projects/cv/CV_assignment_2/";
 void q1() {
     /*
      focal length = 4.3 mm
@@ -24,9 +24,8 @@ void q1() {
      right (x, y, z, omega, phi, kappa)
      -1694.56 -142.25 1585.19 25.03 -55.56 -47.08
      */
-    
-    Mat left_image = imread("/Users/MacBookAir/Documents/guc-projects/cv/CV_assignment_2/left.jpg", CV_LOAD_IMAGE_COLOR);   // Read the file
-    Mat right_image = imread("/Users/MacBookAir/Documents/guc-projects/cv/CV_assignment_2/right.jpg", CV_LOAD_IMAGE_COLOR);   // Read the file
+    Mat left_image = imread(path + "left.jpg", CV_LOAD_IMAGE_COLOR);   // Read the file
+    Mat right_image = imread(path + "right.jpg", CV_LOAD_IMAGE_COLOR);   // Read the file
     
     double f = 4.3;
     double u0 = 320, v0 = 240;
@@ -67,7 +66,7 @@ void q2() {
 //    alpha_u = alpha_v = 100
 //    SizeX = sizeY = 200
     
-    Mat img = imread("/Users/MacBookAir/Documents/guc-projects/cv/CV_assignment_2/input.jpg", CV_LOAD_IMAGE_COLOR);   // Read the file
+    Mat img = imread(path + "input.jpg", CV_LOAD_IMAGE_COLOR);   // Read the file
     int sizeX = 200, sizeY = 200;
     double u0 = sizeY / 2, v0 = sizeX / 2;
     double alphaU = 100;
@@ -90,7 +89,7 @@ void q3() {
 //    Left: [260, 209], Right: [204, 148], 3D: [301.40, 875.92, 514.52]
 //    Left: [339, 268], Right: [233, 262], 3D: [289.37, 706.35, 144.88]
     
-    Mat img = imread("/Users/MacBookAir/Documents/guc-projects/cv/CV_assignment_2/right.jpg", CV_LOAD_IMAGE_COLOR);   // Read the file
+    Mat img = imread(path + "right.jpg", CV_LOAD_IMAGE_COLOR);   // Read the file
     
     double f = 4.3;
     double u0 = 320, v0 = 240;
@@ -114,7 +113,7 @@ void q3() {
     vector<Mat> left_mats;
     vector<Mat> right_mats;
     
-    for (int i = 8 ; i < 10 - 1; i += 2 ) {
+    for (int i = 0 ; i < 10 - 1; i += 2 ) {
         left_mats.push_back(Mat(3, 1, CV_64F, new double[3] {left_data[i], left_data[i + 1], 1}));
         right_mats.push_back(Mat(3, 1, CV_64F, new double[3] {right_data[i], right_data[i + 1], 1}));
     }
