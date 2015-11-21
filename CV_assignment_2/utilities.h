@@ -16,6 +16,7 @@
 
 using namespace std;
 using namespace cv;
+
 #define degToRad(c) ((c) * 3.1415926 / 180)
 
 bool isZero(double x);
