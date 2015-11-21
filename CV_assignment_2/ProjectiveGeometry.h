@@ -28,6 +28,7 @@ public:
     ProjectiveGeometry(Camera * c1, Camera * c2);
     Mat computeFundmentalMatrix();
     Mat computeProjectedImage(Mat img);
+    vector<Mat> reconstruct3DPoints(vector<Mat> left_mats, vector<Mat> right_mats);
     static Mat getSkewMatrix(Mat mat);
 };
 

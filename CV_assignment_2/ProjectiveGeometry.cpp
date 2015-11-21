@@ -71,6 +71,50 @@ Mat ProjectiveGeometry::computeProjectedImage(Mat img) {
 //    waitKey();
     return result2;
 }
+vector<Mat> ProjectiveGeometry::reconstruct3DPoints(vector<Mat> left_mats, vector<Mat> right_mats) {
+    vector<Mat> results;
+    Mat pInfinity1 = camera1->computeAR();
+    Mat pInfinity2 = camera2->computeAR();
+    Mat c1  = camera1->computeCameraCenterMatrix(false);
+    Mat c2  = camera2->computeCameraCenterMatrix(false);
+    Mat I = Mat::eye(3, 3, CV_64F);
+    printMat("pInfinity: ", pInfinity1);
+//    Mat temp;
+//    normalize(Mat(3,1, CV_64F, new double[3] {5, 5, 5}), temp);
+//    printMat("norm exp", temp);
+    for (int i = 0 ; i < left_mats.size(); i++) {
+        Mat mInfinity1 = pInfinity1.inv() * left_mats[i];
+        Mat mInfinity2 = pInfinity2.inv() * right_mats[i];
+        printMat("mInfinity1: ", mInfinity1);
+        printMat("mInfinity2: ", mInfinity2);
+        normalize(mInfinity1, mInfinity1);
+        normalize(mInfinity2, mInfinity2);
+        mInfinity1 = mInfinity1;
+        mInfinity2 = mInfinity2;
+        printMat("point left", left_mats[i]);
+        printMat("point right", right_mats[i]);
+        printMat("mInfinity1 norm: ", mInfinity1);
+        printMat("mInfinity2 norm: ", mInfinity2);
+        Mat m = (
+                    (I - (mInfinity1 * mInfinity1.t()))
+                    +
+                    (I - (mInfinity2 * mInfinity2.t()))
+                ).inv()
+                *
+                (
+                   c1
+                   +
+                   c2
+                   -
+                   mInfinity1.mul(c1.t() * mInfinity1)
+                   -
+                   mInfinity2.mul(c2.t() * mInfinity2)
+                );
+        printMat("mat: ", m);
+        results.push_back(m);
+    }
+    return results;
+}
 
 Mat ProjectiveGeometry::getSkewMatrix(Mat mat) {
     double * temp_data = new double[9]{

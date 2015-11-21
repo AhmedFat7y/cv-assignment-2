@@ -20,7 +20,7 @@ Camera::Camera(double focalLength, double u0, double v0, double FH, double FW, d
     this->angle1 = kappa;
     this->angle2 = phi;
     this->angle3 = omega;
-    this->isTiltPanSwing = true;
+    this->isTiltPanSwing = false;
     this->cameraCenter = cameraCenter;
     this->p = 0;
     this->d = 0;
